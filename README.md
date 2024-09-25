@@ -8,14 +8,11 @@ big thanks to vexcited honestly
 
 https://github.com/Vexcited/EDT-IUT-Info-Limoges/blob/main/packages/website/README.md
 
-https://edt-iut-info-limoges.vercel.app/api
+## example
+![1000001688](https://github.com/user-attachments/assets/dadccf45-d95c-4424-9cb2-e046dc9e18b7)
 
 
-## Example
-
-https://github.com/user-attachments/assets/54a8ad0d-2a86-47c2-8a42-20578f2b0895
-
-## Usage 
+## usage 
 
 (edit the .xml if ur watch isn't the forerunner 55)
 

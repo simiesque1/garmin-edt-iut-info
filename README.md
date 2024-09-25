@@ -1,3 +1,6 @@
+
+
+
 # garmin-edt-iut-info 📅
 built that on top of @vexcited API for my institute's timetable to be shown on my garmin watch, so i dont have to open my phone to know in which room i'm in :)
 
@@ -8,7 +11,11 @@ https://github.com/Vexcited/EDT-IUT-Info-Limoges/blob/main/packages/website/READ
 https://edt-iut-info-limoges.vercel.app/api
 
 
-## Usage
+## Example
+
+https://github.com/user-attachments/assets/54a8ad0d-2a86-47c2-8a42-20578f2b0895
+
+## Usage 
 
 (edit the .xml if ur watch isn't the forerunner 55)
 

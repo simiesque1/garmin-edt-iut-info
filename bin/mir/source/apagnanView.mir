@@ -1,0 +1,864 @@
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 3; ]
+import Toybox.Communications;
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 5; ]
+import Toybox.Lang;
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 6; ]
+import Toybox.Time;
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 7; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 9; ]
+class apagnanView extends WatchUi.View{
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 9; ]
+    <init> {
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 11 15 ]
+        %tmp.1 = newa 0;
+        putv self :relevantCourses %tmp.1;
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 10; @position = 15; ]
+    protected
+    var statusMessage = "Loading...";
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 11; @position = 15; ]
+    protected
+    var relevantCourses;
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 12; @position = 15; ]
+    protected
+    var nextCourse = null;
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 14; ]
+    function initialize() as Void {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_14_26_16_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 15 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_14_26_16_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 19; ]
+    function onLayout(dc) {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_19_26_21_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 20 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_19_26_21_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 24; ]
+    function onShow() {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_24_22_26_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 25 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :makeRequest;
+        invoke %tmp.1 %tmp.2();
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_24_22_26_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 29; ]
+    function onUpdate(dc) {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_29_26_38_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 30 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 31 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 32 8 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_8_37_8_if_stmt:
+        %tmp.10 = getv ? :nextCourse;
+        %tmp.11 = null;
+        %tmp.12 = ne %tmp.10 %tmp.11;
+        bf %tmp.12 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_8_37_8_if_false;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_8_37_8_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_32_35_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 33 12 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_32_35_8_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_32_35_8_stop" ]
+        %courseInfo.1 = local;
+        %tmp.13 = getm $.Toybox.Lang;
+        %tmp.14 = getv function %tmp.13 :format;
+        %tmp.15 = "$1$\n$2$\n$3$";
+        %tmp.16 = newa 3;
+        %tmp.18 = getv ? :nextCourse;
+        %tmp.19 = as %tmp.18 { (!Null) };
+        %tmp.20 = "content";
+        %tmp.21 = agetv %tmp.19 %tmp.20;
+        %tmp.22 = "lesson_from_reference";
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        %tmp.24 = dup %tmp.16;
+        %tmp.25 = aputv %tmp.24 0 %tmp.23;
+        %tmp.27 = getv ? :nextCourse;
+        %tmp.28 = as %tmp.27 { (!Null) };
+        %tmp.29 = "content";
+        %tmp.30 = agetv %tmp.28 %tmp.29;
+        %tmp.31 = "room";
+        %tmp.32 = agetv %tmp.30 %tmp.31;
+        %tmp.33 = dup %tmp.25;
+        %tmp.34 = aputv %tmp.33 1 %tmp.32;
+        %tmp.35 = self;
+        %tmp.36 = getv function %tmp.35 :formatDate;
+        %tmp.38 = getv ? :nextCourse;
+        %tmp.39 = as %tmp.38 { (!Null) };
+        %tmp.40 = "start_date";
+        %tmp.41 = agetv %tmp.39 %tmp.40;
+        %tmp.42 = invoke %tmp.35 %tmp.36(%tmp.41);
+        %tmp.43 = dup %tmp.34;
+        %tmp.44 = aputv %tmp.43 2 %tmp.42;
+        %tmp.45 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.44);
+        lputv %courseInfo.1 %tmp.45;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 34 12 ]
+        %tmp.46 = lgetv %dc;
+        %tmp.47 = getv function %tmp.46 :drawText;
+        %tmp.48 = lgetv %dc;
+        %tmp.49 = getv function %tmp.48 :getWidth;
+        %tmp.50 = invoke %tmp.48 %tmp.49();
+        %tmp.51 = 2;
+        %tmp.52 = div %tmp.50 %tmp.51;
+        %tmp.53 = lgetv %dc;
+        %tmp.54 = getv function %tmp.53 :getHeight;
+        %tmp.55 = invoke %tmp.53 %tmp.54();
+        %tmp.56 = 2;
+        %tmp.57 = div %tmp.55 %tmp.56;
+        %tmp.58 = getm $.Toybox.Graphics;
+        %tmp.59 = getv %tmp.58 :FONT_XTINY;
+        %tmp.61 = lgetv %courseInfo.1;
+        %tmp.62 = getm $.Toybox.Graphics;
+        %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_CENTER;
+        %tmp.64 = getm $.Toybox.Graphics;
+        %tmp.65 = getv %tmp.64 :TEXT_JUSTIFY_VCENTER;
+        %tmp.66 = bitor %tmp.63 %tmp.65;
+        invoke %tmp.46 %tmp.47(%tmp.52, %tmp.57, %tmp.59, %tmp.61, %tmp.66);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_32_35_8_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_8_37_8_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_8_37_8_if_false:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_35_15_37_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 36 12 ]
+        %tmp.67 = lgetv %dc;
+        %tmp.68 = getv function %tmp.67 :drawText;
+        %tmp.69 = lgetv %dc;
+        %tmp.70 = getv function %tmp.69 :getWidth;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        %tmp.72 = 2;
+        %tmp.73 = div %tmp.71 %tmp.72;
+        %tmp.74 = lgetv %dc;
+        %tmp.75 = getv function %tmp.74 :getHeight;
+        %tmp.76 = invoke %tmp.74 %tmp.75();
+        %tmp.77 = 2;
+        %tmp.78 = div %tmp.76 %tmp.77;
+        %tmp.79 = getm $.Toybox.Graphics;
+        %tmp.80 = getv %tmp.79 :FONT_TINY;
+        %tmp.82 = getv ? :statusMessage;
+        %tmp.83 = getm $.Toybox.Graphics;
+        %tmp.84 = getv %tmp.83 :TEXT_JUSTIFY_CENTER;
+        %tmp.85 = getm $.Toybox.Graphics;
+        %tmp.86 = getv %tmp.85 :TEXT_JUSTIFY_VCENTER;
+        %tmp.87 = bitor %tmp.84 %tmp.86;
+        invoke %tmp.67 %tmp.68(%tmp.73, %tmp.78, %tmp.80, %tmp.82, %tmp.87);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_35_15_37_8_stop:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_32_8_37_8_if_end:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_29_26_38_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 41; ]
+    function makeRequest() {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 42 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_stop" ]
+        %url.1 = local;
+        %tmp.1 = "https://edt-iut-info-limoges.vercel.app/api/timetable/A1/5";
+        lputv %url.1 %tmp.1;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 43 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_stop" ]
+        %params.2 = local;
+        %tmp.2 = newd 0;
+        lputv %params.2 %tmp.2;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 45 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_stop" ]
+        %options.3 = local;
+        %tmp.3 = newd 2;
+        %tmp.5 = const :method;
+        %tmp.6 = getm $.Toybox.Communications;
+        %tmp.7 = getv %tmp.6 :HTTP_REQUEST_METHOD_GET;
+        %tmp.8 = dup %tmp.3;
+        %tmp.9 = aputv %tmp.8 %tmp.5 %tmp.7;
+        %tmp.11 = const :responseType;
+        %tmp.12 = getm $.Toybox.Communications;
+        %tmp.13 = getv %tmp.12 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = aputv %tmp.14 %tmp.11 %tmp.13;
+        lputv %options.3 %tmp.15;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 50 8 ]
+        %tmp.16 = getm $.Toybox.Communications;
+        %tmp.17 = getv function %tmp.16 :makeWebRequest;
+        %tmp.19 = lgetv %url.1;
+        %tmp.21 = lgetv %params.2;
+        %tmp.23 = lgetv %options.3;
+        %tmp.24 = self;
+        %tmp.25 = getv function %tmp.24 :method;
+        %tmp.27 = const :onReceive;
+        %tmp.28 = invoke %tmp.24 %tmp.25(%tmp.27);
+        invoke %tmp.16 %tmp.17(%tmp.19, %tmp.21, %tmp.23, %tmp.28);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_41_27_51_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 54; ]
+    function onReceive(responseCode as Number, data as Null or Dictionary or String or Toybox.PersistedContent.Iterator) as Void {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_54_129_101_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 55 8 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_8_99_8_if_stmt:
+        %tmp.2 = lgetv %responseCode;
+        %tmp.3 = 200;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_8_99_8_if_false;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_8_99_8_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_33_97_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 56 12 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_12_96_12_if_stmt:
+        %tmp.6 = lgetv %data;
+        %tmp.8 = getv ? :Dictionary;
+        %tmp.9 = isa %tmp.6 %tmp.8;
+        bf %tmp.9 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_12_96_12_if_false;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_12_96_12_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_44_94_12_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 57 16 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_44_94_12_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_44_94_12_stop" ]
+        %lessons.1 = local;
+        %tmp.11 = lgetv %data;
+        %tmp.12 = as %tmp.11 { (Dictionary) };
+        %tmp.13 = "data";
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        %tmp.15 = "lessons";
+        %tmp.16 = agetv %tmp.14 %tmp.15;
+        lputv %lessons.1 %tmp.16;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 58 16 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_58_16_61_16_if_stmt:
+        %tmp.18 = lgetv %lessons.1;
+        %tmp.19 = null;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_58_16_61_16_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_58_16_61_16_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_58_37_61_16_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 59 20 ]
+        %tmp.21 = getm $.Toybox.System;
+        %tmp.22 = getv function %tmp.21 :println;
+        %tmp.23 = "Error: lessons is null";
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 60 20 ]
+        ret ?;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_58_37_61_16_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_58_16_61_16_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_58_16_61_16_if_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 63 16 ]
+        %tmp.24 = newa 0;
+        putv self :relevantCourses %tmp.24;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 65 16 ]
+        for @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_test @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_incr @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_init:
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_begin" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_end" ]
+        %i.2 = local;
+        %tmp.25 = 0;
+        lputv %i.2 %tmp.25;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_test:
+        %tmp.27 = lgetv %i.2;
+        %tmp.28 = lgetv %lessons.1;
+        %tmp.29 = getv function %tmp.28 :size;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        %tmp.31 = lt %tmp.27 %tmp.30;
+        bf %tmp.31 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_begin:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_57_89_16_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 66 20 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_57_89_16_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_57_89_16_stop" ]
+        %lesson.3 = local;
+        %tmp.33 = lgetv %lessons.1;
+        %tmp.35 = lgetv %i.2;
+        %tmp.36 = agetv %tmp.33 %tmp.35;
+        lputv %lesson.3 %tmp.36;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 67 20 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_67_20_70_20_if_stmt:
+        %tmp.38 = lgetv %lesson.3;
+        %tmp.39 = null;
+        %tmp.40 = eq %tmp.38 %tmp.39;
+        bf %tmp.40 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_67_20_70_20_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_67_20_70_20_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_67_40_70_20_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 68 24 ]
+        %tmp.41 = getm $.Toybox.System;
+        %tmp.42 = getv function %tmp.41 :println;
+        %tmp.43 = "Error: lesson is null at index ";
+        %tmp.45 = lgetv %i.2;
+        %tmp.46 = add %tmp.43 %tmp.45;
+        invoke %tmp.41 %tmp.42(%tmp.46);
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 69 24 ]
+        goto break @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_incr;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_67_40_70_20_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_67_20_70_20_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_67_20_70_20_if_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 72 20 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_57_89_16_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_57_89_16_stop" ]
+        %group.4 = local;
+        %tmp.48 = lgetv %lesson.3;
+        %tmp.49 = "group";
+        %tmp.50 = agetv %tmp.48 %tmp.49;
+        lputv %group.4 %tmp.50;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 74 20 ]
+        %tmp.52 = lgetv %lesson.3;
+        %tmp.53 = "type";
+        %tmp.54 = agetv %tmp.52 %tmp.53;
+        push %tmp.54;
+        switch %tmp.54 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_switchStmtEnd;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_switchStmtBegin:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 75 24 ]
+        %tmp.55 = dup %tmp.54;
+        %tmp.56 = "CM";
+        %tmp.57 = getv function %tmp.55 :equals;
+        %tmp.58 = invoke %tmp.55 %tmp.57 (%tmp.56);
+        bt %tmp.58 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_75_24_77_33_switchCase;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 78 24 ]
+        %tmp.59 = dup %tmp.54;
+        %tmp.60 = "TD";
+        %tmp.61 = getv function %tmp.59 :equals;
+        %tmp.62 = invoke %tmp.59 %tmp.61 (%tmp.60);
+        bt %tmp.62 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_78_24_82_33_switchCase;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 83 24 ]
+        %tmp.63 = dup %tmp.54;
+        %tmp.64 = "TP";
+        %tmp.65 = getv function %tmp.63 :equals;
+        %tmp.66 = invoke %tmp.63 %tmp.65 (%tmp.64);
+        bt %tmp.66 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_83_24_87_33_switchCase;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_switchStmtDefault:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_defaultCodeBegin;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_75_24_77_33_switchCase:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 76 28 ]
+        %tmp.68 = getv ? :relevantCourses;
+        %tmp.69 = getv function %tmp.68 :add;
+        %tmp.71 = lgetv %lesson.3;
+        invoke %tmp.68 %tmp.69(%tmp.71);
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 77 28 ]
+        goto break @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_switchStmtEnd;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_78_24_82_33_switchCase:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 79 28 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_28_81_28_if_stmt:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_32_79_73_begin:
+        %tmp.73 = lgetv %group.4;
+        %tmp.74 = "main";
+        %tmp.75 = agetv %tmp.73 %tmp.74;
+        %tmp.76 = 2;
+        %tmp.77 = eq %tmp.75 %tmp.76;
+        bf %tmp.77 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_28_81_28_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_54_79_73_true:
+        %tmp.78 = lgetv %group.4;
+        %tmp.79 = getv function %tmp.78 :hasKey;
+        %tmp.80 = "sub";
+        %tmp.81 = invoke %tmp.78 %tmp.79(%tmp.80);
+        %tmp.82 = not %tmp.81;
+        push %tmp.82;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_54_79_73_end:
+        %tmp.83 = phi [%tmp.77 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_32_79_73_begin] [%tmp.82 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_54_79_73_true] [%tmp.83 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_54_79_73_end];
+        bf %tmp.83 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_28_81_28_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_28_81_28_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_76_81_28_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 80 32 ]
+        %tmp.85 = getv ? :relevantCourses;
+        %tmp.86 = getv function %tmp.85 :add;
+        %tmp.88 = lgetv %lesson.3;
+        invoke %tmp.85 %tmp.86(%tmp.88);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_76_81_28_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_28_81_28_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_79_28_81_28_if_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 82 28 ]
+        goto break @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_switchStmtEnd;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_83_24_87_33_switchCase:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 84 28 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_28_86_28_if_stmt:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_32_84_70_begin:
+        %tmp.90 = lgetv %group.4;
+        %tmp.91 = "main";
+        %tmp.92 = agetv %tmp.90 %tmp.91;
+        %tmp.93 = 2;
+        %tmp.94 = eq %tmp.92 %tmp.93;
+        bf %tmp.94 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_28_86_28_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_54_84_70_true:
+        %tmp.96 = lgetv %group.4;
+        %tmp.97 = "sub";
+        %tmp.98 = agetv %tmp.96 %tmp.97;
+        %tmp.99 = 1;
+        %tmp.100 = eq %tmp.98 %tmp.99;
+        push %tmp.100;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_54_84_70_end:
+        %tmp.101 = phi [%tmp.94 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_32_84_70_begin] [%tmp.100 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_54_84_70_true] [%tmp.101 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_54_84_70_end];
+        bf %tmp.101 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_28_86_28_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_28_86_28_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_73_86_28_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 85 32 ]
+        %tmp.103 = getv ? :relevantCourses;
+        %tmp.104 = getv function %tmp.103 :add;
+        %tmp.106 = lgetv %lesson.3;
+        invoke %tmp.103 %tmp.104(%tmp.106);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_73_86_28_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_28_86_28_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_84_28_86_28_if_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 87 28 ]
+        goto break @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_switchStmtEnd;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_defaultCodeBegin:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_74_20_88_20_switchStmtEnd:
+        pop;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_57_89_16_stop:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_incr:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 65 ]
+        %tmp.109 = lgetv %i.2;
+        %tmp.110 = add %tmp.109 1;
+        lputv %i.2 %tmp.110;
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_test;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_65_16_89_16_for_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 91 16 ]
+        %tmp.111 = self;
+        %tmp.112 = getv function %tmp.111 :findClosestCourse;
+        invoke %tmp.111 %tmp.112();
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 93 16 ]
+        %tmp.114 = getv ? :relevantCourses;
+        %tmp.115 = getv function %tmp.114 :size;
+        %tmp.116 = invoke %tmp.114 %tmp.115();
+        %tmp.117 = getv function %tmp.116 :toString;
+        %tmp.118 = invoke %tmp.116 %tmp.117();
+        %tmp.119 = " courses";
+        %tmp.120 = add %tmp.118 %tmp.119;
+        putv self :statusMessage %tmp.120;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_44_94_12_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_12_96_12_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_12_96_12_if_false:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_94_19_96_12_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 95 16 ]
+        %tmp.121 = "Unexpected data type";
+        putv self :statusMessage %tmp.121;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_94_19_96_12_stop:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_56_12_96_12_if_end:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_33_97_8_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_8_99_8_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_8_99_8_if_false:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_97_15_99_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 98 12 ]
+        %tmp.122 = "Error: ";
+        %tmp.123 = lgetv %responseCode;
+        %tmp.124 = getv function %tmp.123 :toString;
+        %tmp.125 = invoke %tmp.123 %tmp.124();
+        %tmp.126 = add %tmp.122 %tmp.125;
+        putv self :statusMessage %tmp.126;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_97_15_99_8_stop:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_55_8_99_8_if_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 100 8 ]
+        %tmp.127 = getm $.Toybox.WatchUi;
+        %tmp.128 = getv function %tmp.127 :requestUpdate;
+        invoke %tmp.127 %tmp.128();
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_54_129_101_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 104; ]
+    function findClosestCourse() {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_104_33_124_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 105 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_104_33_124_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_104_33_124_4_stop" ]
+        %now.1 = local;
+        %tmp.1 = getm $.Toybox.Time;
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %now.1 %tmp.3;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 106 8 ]
+        %tmp.4 = null;
+        putv self :nextCourse %tmp.4;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 108 8 ]
+        for @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_test @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_incr @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_init:
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_begin" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_end" ]
+        %i.2 = local;
+        %tmp.5 = 0;
+        lputv %i.2 %tmp.5;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_test:
+        %tmp.7 = lgetv %i.2;
+        %tmp.9 = getv ? :relevantCourses;
+        %tmp.10 = getv function %tmp.9 :size;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = lt %tmp.7 %tmp.11;
+        bf %tmp.12 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_begin:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_57_117_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 109 12 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_57_117_8_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_57_117_8_stop" ]
+        %course.3 = local;
+        %tmp.14 = getv ? :relevantCourses;
+        %tmp.16 = lgetv %i.2;
+        %tmp.17 = agetv %tmp.14 %tmp.16;
+        lputv %course.3 %tmp.17;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 110 12 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_57_117_8_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_57_117_8_stop" ]
+        %courseTime.4 = local;
+        %tmp.18 = self;
+        %tmp.19 = getv function %tmp.18 :parseDate;
+        %tmp.21 = lgetv %course.3;
+        %tmp.22 = "start_date";
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+        lputv %courseTime.4 %tmp.24;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 112 12 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_12_116_12_if_stmt:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_16_112_64_begin:
+        %tmp.26 = lgetv %courseTime.4;
+        %tmp.27 = null;
+        %tmp.28 = ne %tmp.26 %tmp.27;
+        bf %tmp.28 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_12_116_12_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_38_112_64_true:
+        %tmp.29 = lgetv %courseTime.4;
+        %tmp.30 = as %tmp.29 { (!Null) };
+        %tmp.31 = getv function %tmp.30 :greaterThan;
+        %tmp.33 = lgetv %now.1;
+        %tmp.34 = invoke %tmp.30 %tmp.31(%tmp.33);
+        push %tmp.34;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_38_112_64_end:
+        %tmp.35 = phi [%tmp.28 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_16_112_64_begin] [%tmp.34 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_38_112_64_true] [%tmp.35 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_38_112_64_end];
+        bf %tmp.35 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_12_116_12_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_12_116_12_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_67_116_12_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 113 16 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_16_115_16_if_stmt:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_20_113_97_begin:
+        %tmp.37 = getv ? :nextCourse;
+        %tmp.38 = null;
+        %tmp.39 = eq %tmp.37 %tmp.38;
+        bt %tmp.39 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_16_115_16_if_true;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_42_113_97_false:
+        %tmp.40 = lgetv %courseTime.4;
+        %tmp.41 = as %tmp.40 { (!Null) };
+        %tmp.42 = getv function %tmp.41 :lessThan;
+        %tmp.43 = self;
+        %tmp.44 = getv function %tmp.43 :parseDate;
+        %tmp.46 = getv ? :nextCourse;
+        %tmp.47 = as %tmp.46 { (!Null) };
+        %tmp.48 = "start_date";
+        %tmp.49 = agetv %tmp.47 %tmp.48;
+        %tmp.50 = invoke %tmp.43 %tmp.44(%tmp.49);
+        %tmp.51 = invoke %tmp.41 %tmp.42(%tmp.50);
+        push %tmp.51;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_42_113_97_end:
+        %tmp.52 = phi [%tmp.39 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_20_113_97_begin] [%tmp.51 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_42_113_97_false] [%tmp.52 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_42_113_97_end];
+        bf %tmp.52 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_16_115_16_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_16_115_16_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_100_115_16_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 114 20 ]
+        %tmp.54 = lgetv %course.3;
+        putv self :nextCourse %tmp.54;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_100_115_16_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_16_115_16_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_113_16_115_16_if_end:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_67_116_12_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_12_116_12_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_112_12_116_12_if_end:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_57_117_8_stop:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_incr:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 108 ]
+        %tmp.57 = lgetv %i.2;
+        %tmp.58 = add %tmp.57 1;
+        lputv %i.2 %tmp.58;
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_test;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_108_8_117_8_for_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 119 8 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_8_123_8_if_stmt:
+        %tmp.60 = getv ? :nextCourse;
+        %tmp.61 = null;
+        %tmp.62 = ne %tmp.60 %tmp.61;
+        bf %tmp.62 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_8_123_8_if_false;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_8_123_8_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_32_121_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 120 12 ]
+        %tmp.63 = getm $.Toybox.System;
+        %tmp.64 = getv function %tmp.63 :println;
+        %tmp.65 = "Closest course: ";
+        %tmp.67 = getv ? :nextCourse;
+        %tmp.68 = as %tmp.67 { (!Null) };
+        %tmp.69 = "content";
+        %tmp.70 = agetv %tmp.68 %tmp.69;
+        %tmp.71 = "lesson_from_reference";
+        %tmp.72 = agetv %tmp.70 %tmp.71;
+        %tmp.73 = add %tmp.65 %tmp.72;
+        %tmp.74 = " at ";
+        %tmp.75 = add %tmp.73 %tmp.74;
+        %tmp.77 = getv ? :nextCourse;
+        %tmp.78 = as %tmp.77 { (!Null) };
+        %tmp.79 = "start_date";
+        %tmp.80 = agetv %tmp.78 %tmp.79;
+        %tmp.81 = add %tmp.75 %tmp.80;
+        invoke %tmp.63 %tmp.64(%tmp.81);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_32_121_8_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_8_123_8_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_8_123_8_if_false:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_121_15_123_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 122 12 ]
+        %tmp.82 = getm $.Toybox.System;
+        %tmp.83 = getv function %tmp.82 :println;
+        %tmp.84 = "No upcoming courses found";
+        invoke %tmp.82 %tmp.83(%tmp.84);
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_121_15_123_8_stop:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_119_8_123_8_if_end:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_104_33_124_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 127; ]
+    function parseDate(dateString) {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 128 8 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_8_130_8_if_stmt:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_12_128_56_begin:
+        %tmp.2 = lgetv %dateString;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bt %tmp.4 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_8_130_8_if_true;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_34_128_56_false:
+        %tmp.5 = lgetv %dateString;
+        %tmp.6 = as %tmp.5 { (!Null) };
+        %tmp.7 = getv function %tmp.6 :length;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 19;
+        %tmp.10 = lt %tmp.8 %tmp.9;
+        push %tmp.10;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_34_128_56_end:
+        %tmp.11 = phi [%tmp.4 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_12_128_56_begin] [%tmp.10 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_34_128_56_false] [%tmp.11 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_34_128_56_end];
+        bf %tmp.11 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_8_130_8_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_8_130_8_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_60_130_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 129 12 ]
+        %tmp.12 = null;
+        ret %tmp.12;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_60_130_8_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_8_130_8_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_128_8_130_8_if_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 132 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_stop" ]
+        %year.1 = local;
+        %tmp.13 = lgetv %dateString;
+        %tmp.14 = getv function %tmp.13 :substring;
+        %tmp.15 = 0;
+        %tmp.16 = 4;
+        %tmp.17 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.16);
+        %tmp.18 = getv function %tmp.17 :toNumber;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        lputv %year.1 %tmp.19;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 133 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_stop" ]
+        %month.2 = local;
+        %tmp.20 = lgetv %dateString;
+        %tmp.21 = getv function %tmp.20 :substring;
+        %tmp.22 = 5;
+        %tmp.23 = 7;
+        %tmp.24 = invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23);
+        %tmp.25 = getv function %tmp.24 :toNumber;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        lputv %month.2 %tmp.26;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 134 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_stop" ]
+        %day.3 = local;
+        %tmp.27 = lgetv %dateString;
+        %tmp.28 = getv function %tmp.27 :substring;
+        %tmp.29 = 8;
+        %tmp.30 = 10;
+        %tmp.31 = invoke %tmp.27 %tmp.28(%tmp.29, %tmp.30);
+        %tmp.32 = getv function %tmp.31 :toNumber;
+        %tmp.33 = invoke %tmp.31 %tmp.32();
+        lputv %day.3 %tmp.33;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 135 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_stop" ]
+        %hour.4 = local;
+        %tmp.34 = lgetv %dateString;
+        %tmp.35 = getv function %tmp.34 :substring;
+        %tmp.36 = 11;
+        %tmp.37 = 13;
+        %tmp.38 = invoke %tmp.34 %tmp.35(%tmp.36, %tmp.37);
+        %tmp.39 = getv function %tmp.38 :toNumber;
+        %tmp.40 = invoke %tmp.38 %tmp.39();
+        lputv %hour.4 %tmp.40;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 136 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_stop" ]
+        %minute.5 = local;
+        %tmp.41 = lgetv %dateString;
+        %tmp.42 = getv function %tmp.41 :substring;
+        %tmp.43 = 14;
+        %tmp.44 = 16;
+        %tmp.45 = invoke %tmp.41 %tmp.42(%tmp.43, %tmp.44);
+        %tmp.46 = getv function %tmp.45 :toNumber;
+        %tmp.47 = invoke %tmp.45 %tmp.46();
+        lputv %minute.5 %tmp.47;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 137 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_stop" ]
+        %second.6 = local;
+        %tmp.48 = lgetv %dateString;
+        %tmp.49 = getv function %tmp.48 :substring;
+        %tmp.50 = 17;
+        %tmp.51 = 19;
+        %tmp.52 = invoke %tmp.48 %tmp.49(%tmp.50, %tmp.51);
+        %tmp.53 = getv function %tmp.52 :toNumber;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        lputv %second.6 %tmp.54;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 139 8 ]
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_stmt:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_140_56_begin:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_140_38_begin:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_140_20_begin:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_139_52_begin:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_139_37_begin:
+        %tmp.56 = lgetv %year.1;
+        %tmp.57 = null;
+        %tmp.58 = eq %tmp.56 %tmp.57;
+        bt %tmp.58 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_true;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_28_139_37_false:
+        %tmp.60 = lgetv %month.2;
+        %tmp.61 = null;
+        %tmp.62 = eq %tmp.60 %tmp.61;
+        push %tmp.62;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_28_139_37_end:
+        %tmp.63 = phi [%tmp.58 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_139_37_begin] [%tmp.62 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_28_139_37_false] [%tmp.63 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_28_139_37_end];
+        bt %tmp.63 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_true;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_45_139_52_false:
+        %tmp.65 = lgetv %day.3;
+        %tmp.66 = null;
+        %tmp.67 = eq %tmp.65 %tmp.66;
+        push %tmp.67;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_45_139_52_end:
+        %tmp.68 = phi [%tmp.63 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_139_52_begin] [%tmp.67 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_45_139_52_false] [%tmp.68 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_45_139_52_end];
+        bt %tmp.68 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_true;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_12_140_20_false:
+        %tmp.70 = lgetv %hour.4;
+        %tmp.71 = null;
+        %tmp.72 = eq %tmp.70 %tmp.71;
+        push %tmp.72;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_12_140_20_end:
+        %tmp.73 = phi [%tmp.68 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_140_20_begin] [%tmp.72 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_12_140_20_false] [%tmp.73 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_12_140_20_end];
+        bt %tmp.73 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_true;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_28_140_38_false:
+        %tmp.75 = lgetv %minute.5;
+        %tmp.76 = null;
+        %tmp.77 = eq %tmp.75 %tmp.76;
+        push %tmp.77;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_28_140_38_end:
+        %tmp.78 = phi [%tmp.73 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_140_38_begin] [%tmp.77 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_28_140_38_false] [%tmp.78 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_28_140_38_end];
+        bt %tmp.78 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_true;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_46_140_56_false:
+        %tmp.80 = lgetv %second.6;
+        %tmp.81 = null;
+        %tmp.82 = eq %tmp.80 %tmp.81;
+        push %tmp.82;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_46_140_56_end:
+        %tmp.83 = phi [%tmp.78 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_12_140_56_begin] [%tmp.82 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_46_140_56_false] [%tmp.83 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_46_140_56_end];
+        bf %tmp.83 @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_true:
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_62_142_8_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 141 12 ]
+        %tmp.84 = null;
+        ret %tmp.84;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_140_62_142_8_stop:
+        goto @C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_end;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_139_8_142_8_if_end:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 144 8 ]
+        %tmp.85 = getm $.Toybox.Time;
+        %tmp.86 = getv %tmp.85 :Gregorian;
+        %tmp.87 = getv function %tmp.86 :moment;
+        %tmp.88 = newd 6;
+        %tmp.90 = const :year;
+        %tmp.92 = lgetv %year.1;
+        %tmp.93 = dup %tmp.88;
+        %tmp.94 = aputv %tmp.93 %tmp.90 %tmp.92;
+        %tmp.96 = const :month;
+        %tmp.98 = lgetv %month.2;
+        %tmp.99 = dup %tmp.94;
+        %tmp.100 = aputv %tmp.99 %tmp.96 %tmp.98;
+        %tmp.102 = const :day;
+        %tmp.104 = lgetv %day.3;
+        %tmp.105 = dup %tmp.100;
+        %tmp.106 = aputv %tmp.105 %tmp.102 %tmp.104;
+        %tmp.108 = const :hour;
+        %tmp.110 = lgetv %hour.4;
+        %tmp.111 = dup %tmp.106;
+        %tmp.112 = aputv %tmp.111 %tmp.108 %tmp.110;
+        %tmp.114 = const :minute;
+        %tmp.116 = lgetv %minute.5;
+        %tmp.117 = dup %tmp.112;
+        %tmp.118 = aputv %tmp.117 %tmp.114 %tmp.116;
+        %tmp.120 = const :second;
+        %tmp.122 = lgetv %second.6;
+        %tmp.123 = dup %tmp.118;
+        %tmp.124 = aputv %tmp.123 %tmp.120 %tmp.122;
+        %tmp.125 = invoke %tmp.86 %tmp.87(%tmp.124);
+        ret %tmp.125;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_127_35_152_4_stop:
+    }
+    [ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 155; ]
+    function formatDate(dateString) {
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_155_36_164_4_start:
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 156 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_155_36_164_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_155_36_164_4_stop" ]
+        %moment.1 = local;
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :parseDate;
+        %tmp.4 = lgetv %dateString;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %moment.1 %tmp.5;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 157 8 ]
+        [ "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_155_36_164_4_start" "C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_155_36_164_4_stop" ]
+        %info.2 = local;
+        %tmp.6 = getm $.Toybox.Time.Gregorian;
+        %tmp.7 = getv function %tmp.6 :info;
+        %tmp.9 = lgetv %moment.1;
+        %tmp.10 = getm $.Toybox.Time;
+        %tmp.11 = getv %tmp.10 :FORMAT_SHORT;
+        %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
+        lputv %info.2 %tmp.12;
+[ "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc" 158 8 ]
+        %tmp.13 = getm $.Toybox.Lang;
+        %tmp.14 = getv function %tmp.13 :format;
+        %tmp.15 = "$1$:$2$ $3$/$4$";
+        %tmp.16 = newa 4;
+        %tmp.17 = lgetv %info.2;
+        %tmp.18 = getv %tmp.17 :hour;
+        %tmp.19 = getv function %tmp.18 :format;
+        %tmp.20 = "%02d";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = dup %tmp.16;
+        %tmp.23 = aputv %tmp.22 0 %tmp.21;
+        %tmp.24 = lgetv %info.2;
+        %tmp.25 = getv %tmp.24 :min;
+        %tmp.26 = getv function %tmp.25 :format;
+        %tmp.27 = "%02d";
+        %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
+        %tmp.29 = dup %tmp.23;
+        %tmp.30 = aputv %tmp.29 1 %tmp.28;
+        %tmp.31 = lgetv %info.2;
+        %tmp.32 = getv %tmp.31 :day;
+        %tmp.33 = getv function %tmp.32 :format;
+        %tmp.34 = "%02d";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        %tmp.36 = dup %tmp.30;
+        %tmp.37 = aputv %tmp.36 2 %tmp.35;
+        %tmp.38 = lgetv %info.2;
+        %tmp.39 = getv %tmp.38 :month;
+        %tmp.40 = getv function %tmp.39 :format;
+        %tmp.41 = "%02d";
+        %tmp.42 = invoke %tmp.39 %tmp.40(%tmp.41);
+        %tmp.43 = dup %tmp.37;
+        %tmp.44 = aputv %tmp.43 3 %tmp.42;
+        %tmp.45 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.44);
+        ret %tmp.45;
+C_Users_mikii_Documents_V33_apagnan_source_apagnanView_mc_155_36_164_4_stop:
+    }
+}
+[ @file = "C:\Users\mikii\Documents\V33\apagnan\source\apagnanView.mc"; @line = 1; ]
+<init> {
+}

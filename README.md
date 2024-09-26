@@ -8,9 +8,9 @@ big thanks to vexcited honestly
 
 https://github.com/Vexcited/EDT-IUT-Info-Limoges/blob/main/packages/website/README.md
 
-## example
-![1000001688](https://github.com/user-attachments/assets/dadccf45-d95c-4424-9cb2-e046dc9e18b7)
+## example on my watch
 
+![370901172-dadccf45-d95c-4424-9cb2-e046dc9e18b7 (1)](https://github.com/user-attachments/assets/2f66e583-39bc-43ca-9fce-d7446fa80c58)
 
 ## usage 
 

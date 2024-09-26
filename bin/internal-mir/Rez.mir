@@ -31,7 +31,7 @@ module Rez {
 c_Users_mikii_Documents_V33_apagnan_bin_gen_006_B3869_00_source_Rez_mcgen_13_74_17_8_start:
 [ "c:\Users\mikii\Documents\V33\apagnan\bin\gen\006-B3869-00\source\Rez.mcgen" 14 12 ]
             [ "c_Users_mikii_Documents_V33_apagnan_bin_gen_006_B3869_00_source_Rez_mcgen_13_74_17_8_start" "c_Users_mikii_Documents_V33_apagnan_bin_gen_006_B3869_00_source_Rez_mcgen_13_74_17_8_stop" ]
-            %rez_cmp_local_text_1193531962.1 = local;
+            %rez_cmp_local_text_1405131679.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
             %tmp.5 = newd 6;
@@ -68,10 +68,10 @@ c_Users_mikii_Documents_V33_apagnan_bin_gen_006_B3869_00_source_Rez_mcgen_13_74_
             %tmp.42 = dup %tmp.37;
             %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
             %tmp.1 = newc %tmp.4 (%tmp.43);
-            lputv %rez_cmp_local_text_1193531962.1 %tmp.1;
+            lputv %rez_cmp_local_text_1405131679.1 %tmp.1;
 [ "c:\Users\mikii\Documents\V33\apagnan\bin\gen\006-B3869-00\source\Rez.mcgen" 16 12 ]
             %tmp.44 = newa 1 Array<WatchUi.Drawable>;
-            %tmp.46 = lgetv %rez_cmp_local_text_1193531962.1;
+            %tmp.46 = lgetv %rez_cmp_local_text_1405131679.1;
             %tmp.47 = dup %tmp.44;
             %tmp.48 = aputv %tmp.47 0 %tmp.46;
             ret %tmp.48;

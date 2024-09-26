@@ -2,130 +2,152 @@
 <debugInfo>
     <manifest filename="C:\Users\mikii\Documents\V33\apagnan\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanDelegate.mc" id="1" lineNum="4" parent="globals/apagnanDelegate" pc="268435460" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="2" lineNum="9" parent="globals/apagnanView" pc="268435479" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="2" lineNum="11" parent="globals/apagnanView" pc="268435497" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="3" lineNum="26" parent="globals" pc="268435512" symbol="getApp"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="3" lineNum="27" parent="globals" pc="268435522" symbol="getApp"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="4" lineNum="5" parent="globals/apagnanMenuDelegate" pc="268435538" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435557" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="6" lineNum="5" parent="globals/apagnanApp" pc="268435581" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanDelegate.mc" id="7" lineNum="10" parent="globals/apagnanDelegate" pc="268435600" symbol="onMenu"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanDelegate.mc" id="7" lineNum="11" parent="globals/apagnanDelegate" pc="268435602" symbol="onMenu"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanDelegate.mc" id="7" lineNum="12" parent="globals/apagnanDelegate" pc="268435687" symbol="onMenu"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanDelegate.mc" id="8" lineNum="6" parent="globals/apagnanDelegate" pc="268435690" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanDelegate.mc" id="8" lineNum="7" parent="globals/apagnanDelegate" pc="268435692" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="9" lineNum="155" parent="globals/apagnanView" pc="268435711" symbol="formatDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="9" lineNum="156" parent="globals/apagnanView" pc="268435715" symbol="formatDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="9" lineNum="157" parent="globals/apagnanView" pc="268435730" symbol="formatDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="9" lineNum="158" parent="globals/apagnanView" pc="268435754" symbol="formatDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="10" lineNum="24" parent="globals/apagnanView" pc="268435901" symbol="onShow"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="10" lineNum="25" parent="globals/apagnanView" pc="268435903" symbol="onShow"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="127" parent="globals/apagnanView" pc="268435916" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="128" parent="globals/apagnanView" pc="268435920" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="129" parent="globals/apagnanView" pc="268435946" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="132" parent="globals/apagnanView" pc="268435951" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="133" parent="globals/apagnanView" pc="268435983" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="134" parent="globals/apagnanView" pc="268436015" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="135" parent="globals/apagnanView" pc="268436047" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="136" parent="globals/apagnanView" pc="268436079" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="137" parent="globals/apagnanView" pc="268436111" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="139" parent="globals/apagnanView" pc="268436143" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="141" parent="globals/apagnanView" pc="268436179" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="11" lineNum="144" parent="globals/apagnanView" pc="268436184" symbol="parseDate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="12" lineNum="19" parent="globals/apagnanView" pc="268436272" symbol="onLayout"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="12" lineNum="20" parent="globals/apagnanView" pc="268436274" symbol="onLayout"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="104" parent="globals/apagnanView" pc="268436316" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="105" parent="globals/apagnanView" pc="268436320" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="106" parent="globals/apagnanView" pc="268436337" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="108" parent="globals/apagnanView" pc="268436346" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="109" parent="globals/apagnanView" pc="268436376" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="110" parent="globals/apagnanView" pc="268436389" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="112" parent="globals/apagnanView" pc="268436410" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="113" parent="globals/apagnanView" pc="268436433" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="114" parent="globals/apagnanView" pc="268436484" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="119" parent="globals/apagnanView" pc="268436513" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="120" parent="globals/apagnanView" pc="268436526" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="13" lineNum="122" parent="globals/apagnanView" pc="268436592" symbol="findClosestCourse"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="14" lineNum="14" parent="globals/apagnanView" pc="268436614" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="14" lineNum="15" parent="globals/apagnanView" pc="268436616" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="54" parent="globals/apagnanView" pc="268436635" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="55" parent="globals/apagnanView" pc="268436639" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="56" parent="globals/apagnanView" pc="268436650" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="57" parent="globals/apagnanView" pc="268436668" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="58" parent="globals/apagnanView" pc="268436684" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="59" parent="globals/apagnanView" pc="268436690" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="60" parent="globals/apagnanView" pc="268436711" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="63" parent="globals/apagnanView" pc="268436715" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="65" parent="globals/apagnanView" pc="268436729" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="66" parent="globals/apagnanView" pc="268436753" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="67" parent="globals/apagnanView" pc="268436760" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="68" parent="globals/apagnanView" pc="268436766" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="69" parent="globals/apagnanView" pc="268436790" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="72" parent="globals/apagnanView" pc="268436796" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="74" parent="globals/apagnanView" pc="268436806" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="75" parent="globals/apagnanView" pc="268436814" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="78" parent="globals/apagnanView" pc="268436834" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="83" parent="globals/apagnanView" pc="268436854" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="76" parent="globals/apagnanView" pc="268436877" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="77" parent="globals/apagnanView" pc="268436897" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="79" parent="globals/apagnanView" pc="268436900" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="80" parent="globals/apagnanView" pc="268436937" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="82" parent="globals/apagnanView" pc="268436960" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="84" parent="globals/apagnanView" pc="268436963" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="85" parent="globals/apagnanView" pc="268436997" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="87" parent="globals/apagnanView" pc="268437020" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="91" parent="globals/apagnanView" pc="268437037" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="93" parent="globals/apagnanView" pc="268437049" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="95" parent="globals/apagnanView" pc="268437092" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="98" parent="globals/apagnanView" pc="268437108" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="15" lineNum="100" parent="globals/apagnanView" pc="268437133" symbol="onReceive"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="16" lineNum="29" parent="globals/apagnanView" pc="268437150" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="16" lineNum="30" parent="globals/apagnanView" pc="268437154" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="16" lineNum="31" parent="globals/apagnanView" pc="268437176" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="16" lineNum="32" parent="globals/apagnanView" pc="268437188" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="16" lineNum="33" parent="globals/apagnanView" pc="268437201" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="16" lineNum="34" parent="globals/apagnanView" pc="268437318" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="16" lineNum="36" parent="globals/apagnanView" pc="268437379" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="17" lineNum="41" parent="globals/apagnanView" pc="268437444" symbol="makeRequest"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="17" lineNum="42" parent="globals/apagnanView" pc="268437448" symbol="makeRequest"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="17" lineNum="43" parent="globals/apagnanView" pc="268437455" symbol="makeRequest"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="17" lineNum="45" parent="globals/apagnanView" pc="268437463" symbol="makeRequest"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanView.mc" id="17" lineNum="50" parent="globals/apagnanView" pc="268437497" symbol="makeRequest"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="18" lineNum="11" parent="globals/apagnanMenuDelegate" pc="268437536" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="18" lineNum="12" parent="globals/apagnanMenuDelegate" pc="268437538" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="18" lineNum="13" parent="globals/apagnanMenuDelegate" pc="268437549" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="18" lineNum="14" parent="globals/apagnanMenuDelegate" pc="268437573" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="18" lineNum="15" parent="globals/apagnanMenuDelegate" pc="268437584" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="19" lineNum="7" parent="globals/apagnanMenuDelegate" pc="268437609" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanMenuDelegate.mc" id="19" lineNum="8" parent="globals/apagnanMenuDelegate" pc="268437611" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="20" lineNum="12" parent="globals/apagnanApp" pc="268437630" symbol="onStart"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="21" lineNum="20" parent="globals/apagnanApp" pc="268437633" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="21" lineNum="21" parent="globals/apagnanApp" pc="268437635" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="22" lineNum="7" parent="globals/apagnanApp" pc="268437710" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="22" lineNum="8" parent="globals/apagnanApp" pc="268437712" symbol="initialize"/>
-        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\apagnanApp.mc" id="23" lineNum="16" parent="globals/apagnanApp" pc="268437731" symbol="onStop"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="24" lineNum="13" parent="globals/Rez/Layouts" pc="268437734" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="24" lineNum="14" parent="globals/Rez/Layouts" pc="268437746" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="24" lineNum="16" parent="globals/Rez/Layouts" pc="268437877" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="25" lineNum="21" parent="globals/Rez/Menus/MainMenu" pc="268437894" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="22" parent="globals/Rez/Menus/MainMenu" pc="268437913" symbol="initialize"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="23" parent="globals/Rez/Menus/MainMenu" pc="268437915" symbol="initialize"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Menus/MainMenu" pc="268437933" symbol="initialize"/>
-        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437989" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtDelegate.mc" id="3" lineNum="4" parent="globals/edtDelegate" pc="268435510" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="4" lineNum="5" parent="globals/edtMenuDelegate" pc="268435529" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="5" lineNum="5" parent="globals/edtApp" pc="268435548" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="6" lineNum="9" parent="globals/edtView" pc="268435567" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="6" lineNum="11" parent="globals/edtView" pc="268435585" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtDelegate.mc" id="7" lineNum="10" parent="globals/edtDelegate" pc="268435600" symbol="onMenu"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtDelegate.mc" id="7" lineNum="11" parent="globals/edtDelegate" pc="268435602" symbol="onMenu"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtDelegate.mc" id="7" lineNum="12" parent="globals/edtDelegate" pc="268435687" symbol="onMenu"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtDelegate.mc" id="8" lineNum="6" parent="globals/edtDelegate" pc="268435690" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtDelegate.mc" id="8" lineNum="7" parent="globals/edtDelegate" pc="268435692" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="9" lineNum="11" parent="globals/edtMenuDelegate" pc="268435711" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="9" lineNum="12" parent="globals/edtMenuDelegate" pc="268435713" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="9" lineNum="13" parent="globals/edtMenuDelegate" pc="268435724" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="9" lineNum="14" parent="globals/edtMenuDelegate" pc="268435748" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="9" lineNum="15" parent="globals/edtMenuDelegate" pc="268435759" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="10" lineNum="7" parent="globals/edtMenuDelegate" pc="268435784" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtMenuDelegate.mc" id="10" lineNum="8" parent="globals/edtMenuDelegate" pc="268435786" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="11" lineNum="12" parent="globals/edtApp" pc="268435805" symbol="onStart"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="12" lineNum="20" parent="globals/edtApp" pc="268435808" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="12" lineNum="21" parent="globals/edtApp" pc="268435810" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="13" lineNum="7" parent="globals/edtApp" pc="268435885" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="13" lineNum="8" parent="globals/edtApp" pc="268435887" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtApp.mc" id="14" lineNum="16" parent="globals/edtApp" pc="268435906" symbol="onStop"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="15" lineNum="188" parent="globals/edtView" pc="268435909" symbol="formatDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="15" lineNum="189" parent="globals/edtView" pc="268435913" symbol="formatDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="15" lineNum="190" parent="globals/edtView" pc="268435928" symbol="formatDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="15" lineNum="191" parent="globals/edtView" pc="268435934" symbol="formatDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="15" lineNum="194" parent="globals/edtView" pc="268435943" symbol="formatDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="15" lineNum="195" parent="globals/edtView" pc="268435967" symbol="formatDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="16" lineNum="24" parent="globals/edtView" pc="268436114" symbol="onShow"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="16" lineNum="25" parent="globals/edtView" pc="268436116" symbol="onShow"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="160" parent="globals/edtView" pc="268436129" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="161" parent="globals/edtView" pc="268436133" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="162" parent="globals/edtView" pc="268436159" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="165" parent="globals/edtView" pc="268436164" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="166" parent="globals/edtView" pc="268436196" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="167" parent="globals/edtView" pc="268436228" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="168" parent="globals/edtView" pc="268436260" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="169" parent="globals/edtView" pc="268436292" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="170" parent="globals/edtView" pc="268436324" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="172" parent="globals/edtView" pc="268436356" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="174" parent="globals/edtView" pc="268436392" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="17" lineNum="177" parent="globals/edtView" pc="268436397" symbol="parseDate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="18" lineNum="19" parent="globals/edtView" pc="268436485" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="18" lineNum="20" parent="globals/edtView" pc="268436487" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="125" parent="globals/edtView" pc="268436529" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="126" parent="globals/edtView" pc="268436533" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="127" parent="globals/edtView" pc="268436550" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="129" parent="globals/edtView" pc="268436559" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="130" parent="globals/edtView" pc="268436589" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="131" parent="globals/edtView" pc="268436602" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="132" parent="globals/edtView" pc="268436620" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="133" parent="globals/edtView" pc="268436626" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="135" parent="globals/edtView" pc="268436632" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="137" parent="globals/edtView" pc="268436647" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="138" parent="globals/edtView" pc="268436670" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="139" parent="globals/edtView" pc="268436682" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="141" parent="globals/edtView" pc="268436695" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="142" parent="globals/edtView" pc="268436719" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="143" parent="globals/edtView" pc="268436753" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="149" parent="globals/edtView" pc="268436782" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="150" parent="globals/edtView" pc="268436795" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="151" parent="globals/edtView" pc="268436819" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="152" parent="globals/edtView" pc="268436826" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="19" lineNum="155" parent="globals/edtView" pc="268436899" symbol="findClosestCourse"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="20" lineNum="14" parent="globals/edtView" pc="268436921" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="20" lineNum="15" parent="globals/edtView" pc="268436923" symbol="initialize"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="59" parent="globals/edtView" pc="268436942" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="60" parent="globals/edtView" pc="268436946" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="61" parent="globals/edtView" pc="268436957" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="62" parent="globals/edtView" pc="268436975" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="63" parent="globals/edtView" pc="268436993" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="64" parent="globals/edtView" pc="268436999" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="65" parent="globals/edtView" pc="268437020" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="67" parent="globals/edtView" pc="268437024" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="68" parent="globals/edtView" pc="268437042" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="69" parent="globals/edtView" pc="268437048" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="70" parent="globals/edtView" pc="268437069" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="73" parent="globals/edtView" pc="268437073" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="75" parent="globals/edtView" pc="268437087" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="76" parent="globals/edtView" pc="268437111" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="77" parent="globals/edtView" pc="268437118" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="78" parent="globals/edtView" pc="268437124" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="79" parent="globals/edtView" pc="268437148" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="82" parent="globals/edtView" pc="268437154" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="83" parent="globals/edtView" pc="268437172" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="84" parent="globals/edtView" pc="268437178" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="87" parent="globals/edtView" pc="268437184" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="88" parent="globals/edtView" pc="268437202" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="89" parent="globals/edtView" pc="268437208" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="92" parent="globals/edtView" pc="268437214" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="93" parent="globals/edtView" pc="268437216" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="96" parent="globals/edtView" pc="268437236" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="102" parent="globals/edtView" pc="268437256" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="94" parent="globals/edtView" pc="268437279" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="95" parent="globals/edtView" pc="268437299" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="97" parent="globals/edtView" pc="268437302" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="98" parent="globals/edtView" pc="268437320" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="99" parent="globals/edtView" pc="268437351" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="101" parent="globals/edtView" pc="268437374" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="103" parent="globals/edtView" pc="268437377" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="104" parent="globals/edtView" pc="268437395" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="105" parent="globals/edtView" pc="268437413" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="106" parent="globals/edtView" pc="268437435" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="108" parent="globals/edtView" pc="268437458" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="112" parent="globals/edtView" pc="268437475" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="114" parent="globals/edtView" pc="268437487" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="116" parent="globals/edtView" pc="268437530" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="119" parent="globals/edtView" pc="268437546" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="21" lineNum="121" parent="globals/edtView" pc="268437571" symbol="onReceive"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="29" parent="globals/edtView" pc="268437588" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="30" parent="globals/edtView" pc="268437592" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="31" parent="globals/edtView" pc="268437614" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="32" parent="globals/edtView" pc="268437626" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="33" parent="globals/edtView" pc="268437639" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="38" parent="globals/edtView" pc="268437796" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="39" parent="globals/edtView" pc="268437834" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="22" lineNum="41" parent="globals/edtView" pc="268437895" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="23" lineNum="46" parent="globals/edtView" pc="268437960" symbol="makeRequest"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="23" lineNum="47" parent="globals/edtView" pc="268437964" symbol="makeRequest"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="23" lineNum="48" parent="globals/edtView" pc="268437971" symbol="makeRequest"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="23" lineNum="50" parent="globals/edtView" pc="268437979" symbol="makeRequest"/>
+        <entry filename="C:\\Users\\mikii\\Documents\\V33\\apagnan\\source\\edtView.mc" id="23" lineNum="55" parent="globals/edtView" pc="268438013" symbol="makeRequest"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="24" lineNum="13" parent="globals/Rez/Layouts" pc="268438052" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="24" lineNum="14" parent="globals/Rez/Layouts" pc="268438064" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="24" lineNum="16" parent="globals/Rez/Layouts" pc="268438195" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="25" lineNum="21" parent="globals/Rez/Menus/MainMenu" pc="268438212" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="22" parent="globals/Rez/Menus/MainMenu" pc="268438231" symbol="initialize"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="23" parent="globals/Rez/Menus/MainMenu" pc="268438233" symbol="initialize"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Menus/MainMenu" pc="268438251" symbol="initialize"/>
+        <entry filename="c:\\Users\\mikii\\Documents\\V33\\apagnan\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="26" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268438307" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8389346" symbol="text"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="5" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="12" method="true" symbol="formatDate"/>
+        <entry id="14" method="true" symbol="formatDate"/>
         <entry id="22" method="true" symbol="MainLayout"/>
         <entry field="true" id="8388938" symbol="month"/>
-        <entry id="16" method="true" symbol="parseDate"/>
+        <entry id="18" method="true" symbol="parseDate"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry id="10" object="true" symbol="apagnanView"/>
         <entry field="true" id="24" symbol="AppName"/>
         <entry id="8389339" symbol="second"/>
         <entry id="6" module="true" symbol="globals/Rez/Strings"/>
@@ -134,21 +156,21 @@
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry field="true" id="27" symbol="prompt"/>
-        <entry field="true" id="18" symbol="statusMessage"/>
-        <entry id="9" object="true" symbol="apagnanMenuDelegate"/>
+        <entry field="true" id="20" symbol="statusMessage"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="10" object="true" symbol="edtView"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
         <entry id="29" symbol="item_2"/>
         <entry id="28" symbol="item_1"/>
-        <entry id="20" module="true" symbol="Menus"/>
+        <entry id="12" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="8389349" symbol="justification"/>
-        <entry id="13" method="true" symbol="makeRequest"/>
+        <entry id="15" method="true" symbol="makeRequest"/>
         <entry id="8388637" module="true" symbol="Communications"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="23" object="true" symbol="MainMenu"/>
@@ -157,12 +179,13 @@
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="14" symbol="nextCourse"/>
-        <entry id="15" method="true" symbol="onReceive"/>
-        <entry id="8" object="true" symbol="apagnanDelegate"/>
+        <entry field="true" id="16" symbol="nextCourse"/>
+        <entry id="17" method="true" symbol="onReceive"/>
+        <entry id="7" object="true" symbol="edtApp"/>
+        <entry id="8" object="true" symbol="edtDelegate"/>
         <entry field="true" id="8388720" symbol="hour"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry id="11" method="true" symbol="findClosestCourse"/>
+        <entry id="13" method="true" symbol="findClosestCourse"/>
         <entry field="true" id="21" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
@@ -170,49 +193,57 @@
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="17" symbol="relevantCourses"/>
+        <entry field="true" id="19" symbol="relevantCourses"/>
+        <entry id="9" object="true" symbol="edtMenuDelegate"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry id="8389347" symbol="color"/>
         <entry field="true" id="8388939" symbol="day"/>
-        <entry id="7" object="true" symbol="apagnanApp"/>
         <entry field="true" id="8388940" symbol="year"/>
-        <entry id="19" module="true" symbol="Layouts"/>
+        <entry id="11" module="true" symbol="Layouts"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry field="true" id="26" symbol="menu_label_2"/>
         <entry field="true" id="25" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435900" name="dateString" stackId="1" startPc="268435711"/>
-        <entry endPc="268435900" name="moment" stackId="2" startPc="268435715"/>
-        <entry endPc="268435900" name="info" stackId="3" startPc="268435715"/>
-        <entry arg="true" endPc="268436271" name="dateString" stackId="1" startPc="268435916"/>
-        <entry endPc="268436271" name="year" stackId="2" startPc="268435920"/>
-        <entry endPc="268436271" name="month" stackId="3" startPc="268435920"/>
-        <entry endPc="268436271" name="day" stackId="4" startPc="268435920"/>
-        <entry endPc="268436271" name="hour" stackId="5" startPc="268435920"/>
-        <entry endPc="268436271" name="minute" stackId="6" startPc="268435920"/>
-        <entry endPc="268436271" name="second" stackId="7" startPc="268435920"/>
-        <entry arg="true" endPc="268436315" name="dc" stackId="1" startPc="268436272"/>
-        <entry endPc="268436612" name="now" stackId="1" startPc="268436320"/>
-        <entry endPc="268436512" name="i" stackId="2" startPc="268436376"/>
-        <entry endPc="268436499" name="course" stackId="3" startPc="268436376"/>
-        <entry endPc="268436499" name="courseTime" stackId="4" startPc="268436376"/>
-        <entry arg="true" endPc="268437149" name="responseCode" stackId="1" startPc="268436635"/>
-        <entry arg="true" endPc="268437149" name="data" stackId="2" startPc="268436635"/>
-        <entry endPc="268437088" name="lessons" stackId="3" startPc="268436668"/>
-        <entry endPc="268437036" name="i" stackId="4" startPc="268436753"/>
-        <entry endPc="268437023" name="lesson" stackId="5" startPc="268436753"/>
-        <entry endPc="268437023" name="group" stackId="6" startPc="268436753"/>
-        <entry arg="true" endPc="268437443" name="dc" stackId="1" startPc="268437150"/>
-        <entry endPc="268437375" name="courseInfo" stackId="2" startPc="268437201"/>
-        <entry endPc="268437534" name="url" stackId="1" startPc="268437448"/>
-        <entry endPc="268437534" name="params" stackId="2" startPc="268437448"/>
-        <entry endPc="268437534" name="options" stackId="3" startPc="268437448"/>
-        <entry arg="true" endPc="268437608" name="item" stackId="1" startPc="268437536"/>
-        <entry arg="true" endPc="268437893" name="dc" stackId="1" startPc="268437734"/>
-        <entry endPc="268437893" name="rez_cmp_local_text_1193531962" stackId="2" startPc="268437746"/>
+        <entry arg="true" endPc="268435783" name="item" stackId="1" startPc="268435711"/>
+        <entry arg="true" endPc="268436113" name="dateString" stackId="1" startPc="268435909"/>
+        <entry endPc="268436113" name="moment" stackId="2" startPc="268435913"/>
+        <entry endPc="268436113" name="info" stackId="3" startPc="268435913"/>
+        <entry arg="true" endPc="268436484" name="dateString" stackId="1" startPc="268436129"/>
+        <entry endPc="268436484" name="year" stackId="2" startPc="268436133"/>
+        <entry endPc="268436484" name="month" stackId="3" startPc="268436133"/>
+        <entry endPc="268436484" name="day" stackId="4" startPc="268436133"/>
+        <entry endPc="268436484" name="hour" stackId="5" startPc="268436133"/>
+        <entry endPc="268436484" name="minute" stackId="6" startPc="268436133"/>
+        <entry endPc="268436484" name="second" stackId="7" startPc="268436133"/>
+        <entry arg="true" endPc="268436528" name="dc" stackId="1" startPc="268436485"/>
+        <entry endPc="268436919" name="now" stackId="1" startPc="268436533"/>
+        <entry endPc="268436781" name="i" stackId="2" startPc="268436589"/>
+        <entry endPc="268436768" name="course" stackId="3" startPc="268436589"/>
+        <entry endPc="268436768" name="startDate" stackId="4" startPc="268436589"/>
+        <entry endPc="268436768" name="courseTime" stackId="5" startPc="268436589"/>
+        <entry endPc="268436765" name="nextCourseStartDate" stackId="6" startPc="268436695"/>
+        <entry endPc="268436895" name="content" stackId="7" startPc="268436795"/>
+        <entry arg="true" endPc="268437587" name="responseCode" stackId="1" startPc="268436942"/>
+        <entry arg="true" endPc="268437587" name="data" stackId="2" startPc="268436942"/>
+        <entry endPc="268437526" name="dataDict" stackId="3" startPc="268436975"/>
+        <entry endPc="268437526" name="lessons" stackId="4" startPc="268436975"/>
+        <entry endPc="268437474" name="i" stackId="5" startPc="268437111"/>
+        <entry endPc="268437461" name="lesson" stackId="6" startPc="268437111"/>
+        <entry endPc="268437461" name="group" stackId="7" startPc="268437111"/>
+        <entry endPc="268437461" name="lessonType" stackId="8" startPc="268437111"/>
+        <entry endPc="268437460" name="tdMainGroup" stackId="9" startPc="268437216"/>
+        <entry endPc="268437460" name="tpMainGroup" stackId="10" startPc="268437216"/>
+        <entry endPc="268437460" name="tpSubGroup" stackId="11" startPc="268437216"/>
+        <entry arg="true" endPc="268437959" name="dc" stackId="1" startPc="268437588"/>
+        <entry endPc="268437891" name="courseInfo" stackId="2" startPc="268437639"/>
+        <entry endPc="268438050" name="url" stackId="1" startPc="268437964"/>
+        <entry endPc="268438050" name="params" stackId="2" startPc="268437964"/>
+        <entry endPc="268438050" name="options" stackId="3" startPc="268437964"/>
+        <entry arg="true" endPc="268438211" name="dc" stackId="1" startPc="268438052"/>
+        <entry endPc="268438211" name="rez_cmp_local_text_1405131679" stackId="2" startPc="268438064"/>
     </localVars>
     <deviceInfo partNumber="006-B3869-00"/>
     <annotations>
@@ -224,11 +255,11 @@
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/apagnanDelegate" offset="158" parentId="globals" symbolId="apagnanDelegate" type="class"/>
-        <dataEntry label="globals/apagnanView" offset="213" parentId="globals" symbolId="apagnanView" type="class"/>
-        <dataEntry label="globals/apagnanMenuDelegate" offset="348" parentId="globals" symbolId="apagnanMenuDelegate" type="class"/>
-        <dataEntry label="globals/Rez" offset="403" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/apagnanApp" offset="466" parentId="globals" symbolId="apagnanApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="158" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/edtDelegate" offset="221" parentId="globals" symbolId="edtDelegate" type="class"/>
+        <dataEntry label="globals/edtMenuDelegate" offset="276" parentId="globals" symbolId="edtMenuDelegate" type="class"/>
+        <dataEntry label="globals/edtApp" offset="331" parentId="globals" symbolId="edtApp" type="class"/>
+        <dataEntry label="globals/edtView" offset="402" parentId="globals" symbolId="edtView" type="class"/>
         <dataEntry label="globals/Rez/Drawables" offset="537" parentId="Rez" symbolId="Drawables" type="module"/>
         <dataEntry label="globals/Rez/Layouts" offset="576" parentId="Rez" symbolId="Layouts" type="module"/>
         <dataEntry label="globals/Rez/Menus" offset="615" parentId="Rez" symbolId="Menus" type="module"/>
@@ -236,68 +267,22 @@
         <dataEntry label="globals/Rez/Menus/MainMenu" offset="717" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="apagnanDelegate" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435511" name="&lt;init&gt;" parent="apagnanView" startPc="268435479">
+        <functionEntry accessMode="public" endPc="268435509" name="&lt;init&gt;" parent="Rez" startPc="268435486">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435537" name="getApp" startPc="268435512">
+        <functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="edtDelegate" startPc="268435510">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435556" name="&lt;init&gt;" parent="apagnanMenuDelegate" startPc="268435538">
+        <functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="edtMenuDelegate" startPc="268435529">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435580" name="&lt;init&gt;" parent="Rez" startPc="268435557">
+        <functionEntry accessMode="public" endPc="268435566" name="&lt;init&gt;" parent="edtApp" startPc="268435548">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435599" name="&lt;init&gt;" parent="apagnanApp" startPc="268435581">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435689" name="onMenu" parent="apagnanDelegate" startPc="268435600">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435710" name="initialize" parent="apagnanDelegate" startPc="268435690">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435900" name="formatDate" parent="apagnanView" startPc="268435711">
-            <param id="dateString"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435915" name="onShow" parent="apagnanView" startPc="268435901">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436271" name="parseDate" parent="apagnanView" startPc="268435916">
-            <param id="dateString"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436315" name="onLayout" parent="apagnanView" startPc="268436272">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436613" name="findClosestCourse" parent="apagnanView" startPc="268436316">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436634" name="initialize" parent="apagnanView" startPc="268436614">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437149" name="onReceive" parent="apagnanView" startPc="268436635">
-            <param id="responseCode"/>
-            <param id="data"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437443" name="onUpdate" parent="apagnanView" startPc="268437150">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437535" name="makeRequest" parent="apagnanView" startPc="268437444">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437608" name="onMenuItem" parent="apagnanMenuDelegate" startPc="268437536">
-            <param id="item"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437629" name="initialize" parent="apagnanMenuDelegate" startPc="268437609">
+        <functionEntry accessMode="public" endPc="268435599" name="&lt;init&gt;" parent="edtView" startPc="268435567">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -312,28 +297,74 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437632" name="onStart" parent="apagnanApp" startPc="268437630">
+        <functionEntry accessMode="public" endPc="268435689" name="onMenu" parent="edtDelegate" startPc="268435600">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435710" name="initialize" parent="edtDelegate" startPc="268435690">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435783" name="onMenuItem" parent="edtMenuDelegate" startPc="268435711">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435804" name="initialize" parent="edtMenuDelegate" startPc="268435784">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435807" name="onStart" parent="edtApp" startPc="268435805">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437709" name="getInitialView" parent="apagnanApp" startPc="268437633">
+        <functionEntry accessMode="public" endPc="268435884" name="getInitialView" parent="edtApp" startPc="268435808">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437730" name="initialize" parent="apagnanApp" startPc="268437710">
+        <functionEntry accessMode="public" endPc="268435905" name="initialize" parent="edtApp" startPc="268435885">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437733" name="onStop" parent="apagnanApp" startPc="268437731">
+        <functionEntry accessMode="public" endPc="268435908" name="onStop" parent="edtApp" startPc="268435906">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437893" name="MainLayout" parent="Layouts" startPc="268437734">
+        <functionEntry accessMode="public" endPc="268436113" name="formatDate" parent="edtView" startPc="268435909">
+            <param id="dateString"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436128" name="onShow" parent="edtView" startPc="268436114">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436484" name="parseDate" parent="edtView" startPc="268436129">
+            <param id="dateString"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436528" name="onLayout" parent="edtView" startPc="268436485">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437912" name="&lt;init&gt;" parent="MainMenu" startPc="268437894">
+        <functionEntry accessMode="public" endPc="268436920" name="findClosestCourse" parent="edtView" startPc="268436529">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438045" name="initialize" parent="MainMenu" startPc="268437913">
+        <functionEntry accessMode="public" endPc="268436941" name="initialize" parent="edtView" startPc="268436921">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437587" name="onReceive" parent="edtView" startPc="268436942">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437959" name="onUpdate" parent="edtView" startPc="268437588">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438051" name="makeRequest" parent="edtView" startPc="268437960">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438211" name="MainLayout" parent="Layouts" startPc="268438052">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438230" name="&lt;init&gt;" parent="MainMenu" startPc="268438212">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438363" name="initialize" parent="MainMenu" startPc="268438231">
             <documentation/>
         </functionEntry>
     </functions>

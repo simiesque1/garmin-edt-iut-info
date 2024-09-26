@@ -2,7 +2,7 @@
 
 
 # garmin-edt-iut-info 📅
-built that on top of [@Vexcited](https://github.com/Vexcited)'s API for my institute's timetable to be shown on my garmin watch, so i dont have to open my phone to know in which room i'm in :)
+built that in Monkey C (a weird language), used [@Vexcited](https://github.com/Vexcited)'s API for the institute's timetable so that i can look at my garmin watch and see in which room i'm in :)
 
 big thanks to vexcited honestly 
 
